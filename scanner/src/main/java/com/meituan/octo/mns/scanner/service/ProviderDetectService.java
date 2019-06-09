@@ -80,7 +80,7 @@ public class ProviderDetectService {
                         } else {
                             status = SocketDetector.detect(provider.getIp(), provider.getPort());
                         }
-                        log.info("round={}, detecting provider:{}, status:{}", round, provider, status);
+                        log.info("round={}, detecting provider:{}, status:{}, originalStatus: {}", round, provider, status, originalStatus);
                         if (status != originalStatus) {
                             updateService.update(round, provider, providerJson, status);
                         }

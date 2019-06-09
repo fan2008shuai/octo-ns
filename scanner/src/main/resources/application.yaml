@@ -1,6 +1,6 @@
 zookeeper:
   basePath: /octo/nameservice
-  #url: 127.0.0.1:2181
+  url: 127.0.0.1:2181
 
 executor:
   alive:
